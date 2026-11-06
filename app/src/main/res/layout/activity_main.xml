@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101510" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="22dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="ECHO" android:textColor="#B7F36B" android:textStyle="bold" android:textSize="14sp" android:letterSpacing="0.18" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Find your\nflow." android:textColor="#F5F7F1"
+            android:textSize="36sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:text="A little atmosphere for your day." android:textColor="#AAB3A7" android:textSize="15sp" />
+        <EditText android:id="@+id/searchInput" android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="22dp" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:singleLine="true" android:hint="Search sounds..." android:textColor="#F5F7F1"
+            android:textColorHint="#8C9789" android:backgroundTint="#B7F36B"
+            android:inputType="text" android:imeOptions="actionSearch" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="22dp" android:text="BROWSE GENRES" android:textColor="#B7F36B"
+            android:textStyle="bold" android:textSize="12sp" android:letterSpacing="0.12" />
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:scrollbars="none" android:fillViewport="false">
+            <LinearLayout android:id="@+id/genreTabs" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal" />
+        </HorizontalScrollView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="22dp" android:text="YOUR SOUNDS" android:textColor="#B7F36B" android:textStyle="bold" android:textSize="12sp" android:letterSpacing="0.12" />
+        <Button android:id="@+id/songRain" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="12dp" android:gravity="center_vertical" android:text="🌧   Rain &amp; Thunder        ▶" android:textAllCaps="false" android:textColor="#F5F7F1" android:backgroundTint="#263126" />
+        <Button android:id="@+id/songCafe" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:gravity="center_vertical" android:text="☕   Cafe Ambience           ▶" android:textAllCaps="false" android:textColor="#F5F7F1" android:backgroundTint="#263126" />
+        <Button android:id="@+id/songSpace" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:gravity="center_vertical" android:text="🌌   Deep Space                ▶" android:textAllCaps="false" android:textColor="#F5F7F1" android:backgroundTint="#263126" />
+        <Button android:id="@+id/songForest" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:gravity="center_vertical" android:text="🌲   Forest Birds               ▶" android:textAllCaps="false" android:textColor="#F5F7F1" android:backgroundTint="#263126" />
+        <Button android:id="@+id/songEdm" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:gravity="center_vertical" android:text="⚡   Neon Pulse · EDM             ▶" android:textAllCaps="false" android:textColor="#F5F7F1" android:backgroundTint="#263126" />
+        <Button android:id="@+id/songHipHop" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:gravity="center_vertical" android:text="🎤   Midnight Groove · Hip-Hop    ▶" android:textAllCaps="false" android:textColor="#F5F7F1" android:backgroundTint="#263126" />
+        <Button android:id="@+id/songLofi" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:gravity="center_vertical" android:text="☕   Lo-fi Evening                 ▶" android:textAllCaps="false" android:textColor="#F5F7F1" android:backgroundTint="#263126" />
+        <TextView android:id="@+id/noResultsText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:visibility="gone" android:layout_marginTop="14dp" android:text="No sounds found. Try another search."
+            android:textColor="#AAB3A7" android:textSize="14sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:orientation="vertical" android:padding="18dp" android:background="#1C261C">
+            <TextView android:id="@+id/statusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="READY TO PLAY" android:textColor="#B7F36B" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.12" />
+            <TextView android:id="@+id/currentTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Rain &amp; Thunder" android:textColor="#FFFFFF" android:textSize="22sp" android:textStyle="bold" />
+            <TextView android:id="@+id/currentArtist" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Nature Sounds" android:textColor="#AAB3A7" android:textSize="14sp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center" android:orientation="horizontal">
+                <Button android:id="@+id/previousButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="|◀" android:textAllCaps="false" android:textColor="#FFFFFF" android:backgroundTint="#344234" />
+                <Button android:id="@+id/playButton" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:text="▶  Play" android:textAllCaps="false" android:textColor="#101510" android:textStyle="bold" android:backgroundTint="#B7F36B" />
+                <Button android:id="@+id/nextButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="▶|" android:textAllCaps="false" android:textColor="#FFFFFF" android:backgroundTint="#344234" />
+            </LinearLayout>
+            <Button android:id="@+id/stopButton" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="4dp" android:text="Stop playback" android:textAllCaps="false" android:textColor="#CFD6CB" android:backgroundTint="#263126" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center" android:text="OFFLINE LISTENING  •  ECHO PLAYER" android:textColor="#697568" android:textSize="10sp" android:letterSpacing="0.08" />
+    </LinearLayout>
+</ScrollView>
